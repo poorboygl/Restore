@@ -3,3 +3,5 @@ dotnet new sln
 
 dotnet new webapi -n API -controllers
 dotnet sln add API
+dotnet dev-certs https --clean
+dotnet dev-certs https --trust
