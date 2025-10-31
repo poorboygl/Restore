@@ -5,3 +5,9 @@ dotnet new webapi -n API -controllers
 dotnet sln add API
 dotnet dev-certs https --clean
 dotnet dev-certs https --trust
+
+dotnet tool install --global dotnet-ef
+dotnet tool list -g
+dotnet ef
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef database update
